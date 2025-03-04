@@ -1,0 +1,29 @@
+{
+  "name": "cypress-api",
+  "version": "1.0.0",
+  "description": "Automação de testes em api com cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santosqa/cypress-api.git"
+  },
+  "keywords": [
+    "api",
+    "cypress",
+    "rabbitmq",
+    "qa",
+    "automation"
+  ],
+  "author": "Santos QA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santosqa/cypress-api/issues"
+  },
+  "homepage": "https://github.com/santosqa/cypress-api#readme",
+  "devDependencies": {
+    "cypress": "^12.12.0"
+  }
+}
