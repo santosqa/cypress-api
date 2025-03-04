@@ -141,28 +141,38 @@ git checkout nome_da_branch_desejada
     }
 });
 ```
-
+###
 ##### 4. Usando o terminal no diretório da pasta MAIL, execute os comandos abaixo:
 - 1 - Instale as dependencias | ``` npm install``` 
 - 2 - Inicie a api | ```npm run dev``` 
+###
+##### 5. Usando o terminal no diretório da pasta API, execute os comandos abaixo:
+- 1 - Instale o nvm | ```nvm install --lts``` 
+- 2 - Setar o uso do nvm | ```nvm use --lts``` 
+- 3 - Instale as dependencias | ``` npm install``` 
+- 4 - Inicie a api | ```npm run dev``` 
+- 5 - Url da aplicação | localhost:3333/ 
 
-##### Usando o terminal no diretório da pasta API, execute os comandos abaixo:
-- 1 - Instale as dependencias | ``` npm install``` 
-- 2 - Inicie a api | ```npm run dev``` 
-
-##### Usando o terminal no diretório da pasta WEB, execute os comandos abaixo:
+###
+##### 6. Usando o terminal no diretório da pasta WEB, execute os comandos abaixo:
 - 1 - Instale as dependencias | ```npm install``` 
-- 2 - Inicie a Aplicação WEb |  ```npm run dev``` 
+- 2 - Inicie a Aplicação WEb |  ```npm run dev```  Ou execute em mode de depuração com: ```node --inspect server.js```
 - 3 - Url da aplicação | localhost:3000/ 
+- 4 - Verificar a porta no Linux/Mac |```lsof -i :3000```  
+- 5 - Finalizar o processo no Linux/Mac|```kill -9 <PID>`` 
+- 6 - Verificar a porta no Windows |```netstat -ano | findstr :3000```  
+- 7 - Finalizar o processo no Windows |```taskkill /PID <PID> /F`` 
 
-##### Usando o terminal no diretório da pasta TEST, execute os comandos abaixo:
+
+###
+##### 7. Usando o terminal no diretório da pasta TEST, execute os comandos abaixo:
 - 1 - Iniciar o projeto | ```npm init``` 
 - 2 - Instalar cypress | ``` npm i cypress@12.12.0 -D ``` 
 - 3 - Abrir cypress | ```cypress open```
 
 
 
-###
+#
 
 ---
 

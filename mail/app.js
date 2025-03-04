@@ -7,8 +7,8 @@ const transporter = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: 'judson.mcdermott@ethereal.email',
-        pass: 'DvahGeXGwM4XcTx7zF'
+        user: 'audra.osinski88@ethereal.email',
+        pass: 'BZVQ8KkwAQ5aFUk2Xt'
     }
 });
 
