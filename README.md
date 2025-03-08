@@ -169,6 +169,7 @@ git checkout nome_da_branch_desejada
 - 1 - Iniciar o projeto | ```npm init``` 
 - 2 - Instalar cypress | ``` npm i cypress@12.12.0 -D ``` 
 - 3 - Abrir cypress | ```cypress open```
+- 4 - Instalar mongoDB como dependencia de desenvolvimento | ```npm i -D mongodb```
 
 
 
