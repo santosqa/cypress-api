@@ -170,8 +170,8 @@ git checkout nome_da_branch_desejada
 - 2 - Instalar cypress | ``` npm i cypress@12.12.0 -D ``` 
 - 3 - Abrir cypress | ```cypress open```
 - 4 - Instalar mongoDB como dependencia de desenvolvimento | ```npm i -D mongodb```
-
-
+- 5 - Instalar o plugin Cypress API | ```npm i cypress-plugin-api -D```
+- 6 - fazer o import do plunig no arquivo `e2e.js` | ```import 'cypress-plugin-api'```
 
 #
 

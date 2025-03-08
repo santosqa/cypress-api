@@ -1,33 +1,20 @@
 /// <reference types="cypress" />
- 
+
+import fixture from '../fixtures/post_user/post-user-fixtures.json'
+import { requestApi } from '../support/api/request-post-user.js'
+
 describe('POST /users', () => {
-  
   it('Register a new user', () => {
+    cy.task('deleteUser', fixture.validUser.email)
 
-    const user = {
-      name: 'SQA test',
-      email: 'J9TtXa@example.com', 
-      password: '123456'
-    }
-   
-    /* 
-    * Deletar usuário antes de cadastrar
-    * para garantir que a massa esteja sempre limpa para o uso. 
-    */
-    cy.task('deleteUser', user.email)
-
-    cy.request({
-      url: '/users',
-      method: 'POST',
-      body: user,
-      failOnStatusCode: false
-    }).then((response => {
+    requestApi.postUser(fixture.validUser).then(response => {
       expect(response.status).to.eq(200)
-      expect(response.body).to.have.property('name', user.name)
-      expect(response.body).to.have.property('email', user.email)
-      cy.log("[FIM] Cadastrado com sucesso: " + JSON.stringify(response.body))
-    }))
-
+      expect(response.body).to.include({
+        name: fixture.validUser.name,
+        email: fixture.validUser.email,
+      })
+      cy.log(`[FIM] Cadastrado com sucesso: ${JSON.stringify(response.body)}`)
+    })
   })
 
 

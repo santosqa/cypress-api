@@ -1,0 +1,12 @@
+{
+  "validUser": {
+    "name": "SQA new test",
+    "email": "newtest@santosqa.com",
+    "password": "123456"
+  },
+  "invalidUser": {
+    "name": "",
+    "email": "invalid-email",
+    "password": ""
+  }
+}
